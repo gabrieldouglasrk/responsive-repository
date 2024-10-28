@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.shadow-back {
+    width: 384px;
+    height: 522px;
+    background-color: hsl(0, 0%, 7%);
+    box-shadow: 10px 10px 0px 0px ;
+    border-radius: 22px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid  hsl(0, 0%, 7%);
+    background-color: white;
+    width: 384px;
+    height: 522px;
+    margin: auto;
+    /* Adiciona centralização */
+    border-radius: 20px;
+    /* Para bordas arredondadas, opcional */
+    padding: 24px;
+}
+
+.blog-img {
+    width: auto;
+    border-radius: 10px;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: repeat(3, 30px);
+    gap: 12px;
+    padding: 24px 0px;
+
+}
+
+.category {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: hsl(47, 88%, 63%);
+    width: 82px;
+    height: 29px;
+    border-radius: 4px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+}
+
+.published {
+    display: flex;
+    align-items: center;
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+}
+
+.introdution {
+    padding: 0px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+}
+
+.content .text-cont {
+    color: hsl(0, 0%, 42%);
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+}
+
+.autor {
+    display: flex;
+    width: 129px;
+    height: 32px;
+}
+
+.img-autor {
+    padding-right: 20px;
+    width: 32px;
+    border-radius: 20px;
+}
+
+.autor-content {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    font-size: 14px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+}
+
+@media (max-width: 375px) {
+    .container-1 {
+        width: 90%; /* Ajuste para ocupar quase toda a tela */
+        padding: 16px;
+    }
+
+    .shadow-back {
+        width: 90%; /* Ajuste para a tela pequena */
+    }
+    
+}
+
+
+@media (min-width: 1440px) {
+    .container-1 {
+        width: auto;
+    }
+}
